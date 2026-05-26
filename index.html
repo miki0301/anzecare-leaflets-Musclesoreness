@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【安澤健康守護】解開身體的緊繃結界：陪你一起釋放肌腱壓力，找回辦公椅上的輕盈律動</title>
+    <!-- 引入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 Google Fonts (Noto Sans TC) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- 引入 FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- 引入 MathJax 處理 LaTeX 數學及科學符號 -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            DEFAULT: '#2a5599', // 搭配安澤LOGO的深藍色
+                            light: '#faf8f5', // 柔和溫暖的暖石/米白色背景 (象徵身體結構穩定與舒緩)
+                            accent: '#6366f1' // 靛藍/肌肉放鬆調
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #faf8f5; /* 柔和暖石色 */
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.97);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #2a5599, #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        @media print {
+            body { background: white; }
+            .glass-card { box-shadow: none; border: none; max-width: 100%; margin: 0; padding: 0; }
+            @page { margin: 0.5cm 0.7cm; size: A4 portrait; }
+            .no-print { display: none; }
+            /* 強制列印時內文字體至少 14pt，並縮減空隙以保證 A4 一頁 */
+            p, .print-text-large { font-size: 14pt !important; line-height: 1.4 !important; }
+            h3 { font-size: 15pt !important; }
+            h2 { font-size: 16pt !important; }
+            .text-xs { font-size: 10pt !important; }
+            .print-py-none { padding-top: 0px !important; padding-bottom: 0px !important; }
+            .print-my-small { margin-top: 3px !important; margin-bottom: 3px !important; }
+            .print-gap-small { gap: 8px !important; }
+            .print-p-small { padding: 8px !important; }
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased min-h-screen py-3 px-4 md:px-8">
+
+    <!-- 主容器 -->
+    <div class="max-w-4xl mx-auto glass-card rounded-3xl shadow-xl overflow-hidden">
+        
+        <!-- 頂部/標題區 -->
+        <header class="bg-white px-6 py-4 md:py-6 border-b-4 border-brand text-center relative print-py-none">
+            <!-- 裝飾背景 -->
+            <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
+                <i class="fa-solid fa-person-falling-burst absolute -right-10 -top-10 text-9xl text-brand"></i>
+                <i class="fa-solid fa-chair absolute left-5 bottom-5 text-6xl text-brand-accent"></i>
+            </div>
+
+            <!-- LOGO -->
+            <img src="安澤健康顧問%20Anzecare%20Health.png" alt="安澤健康顧問 Anzecare Health" class="h-11 md:h-13 mx-auto mb-2 relative z-10 object-contain">
+            
+            <p class="text-brand font-bold tracking-widest mb-1 text-base md:text-lg relative z-10">【安澤健康守護】</p>
+            <h1 class="text-2xl md:text-3.5xl font-black text-brand leading-tight relative z-10">
+                解開身體的緊繃結界<br>
+                <span class="text-xl md:text-2.5xl mt-1.5 block text-gray-700 font-bold">陪你一起釋放肌腱壓力，找回辦公椅上的<span class="gradient-text">輕盈律動</span></span>
+            </h1>
+        </header>
+
+        <!-- 內容區 -->
+        <main class="p-5 md:p-8 space-y-5 print-p-small">
+
+            <!-- 我們的身體發生了什麼事？ -->
+            <section class="space-y-3">
+                <div class="flex items-center gap-3">
+                    <div class="bg-brand text-white w-9 h-9 rounded-full flex items-center justify-center text-lg shadow-md shrink-0">
+                        <i class="fa-solid fa-circle-question"></i>
+                    </div>
+                    <h2 class="text-xl md:text-2xl font-bold text-gray-800">我們的身體發生了什麼事？
+                        
+                    </h2>
+                </div>
+                
+                <p class="text-gray-700 leading-relaxed text-base md:text-lg font-medium print-text-large">
+                    盯著螢幕打了一整天的報表，下班時是不是覺得肩膀沉重得像壓了兩塊磚頭，轉個脖子還會聽到喀喀聲？請先放下手邊滑動的滑鼠，試著聳聳肩再放鬆。在長期的辦公生活中，當身體不知不覺往前傾、變成烏龜頸或駝背時，肌肉與肌腱這群<strong>「強力橡皮筋」</strong>就會跟著你瘋狂加班而失去彈性：
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-4 print-gap-small">
+                    <!-- 肩頸卡片 -->
+                    <div class="bg-amber-50/80 border-l-4 border-amber-500 p-4 rounded-r-2xl shadow-sm print-p-small">
+                        <div class="flex items-center gap-3 mb-1.5 text-amber-800">
+                            <i class="fa-solid fa-truck-pickup text-2xl"></i>
+                            <h3 class="text-lg font-bold">肩頸變成過載的起重機</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm md:text-base leading-relaxed font-medium print-text-large">
+                            頭部大約有一顆 $5\text{ 公斤}$ 重的保齡球那麼重。當脖子前伸時，肩頸肌肉就必須像「$24$ 小時不停歇的鋼索」，承受高達 <strong>$3 \sim 4$ 倍</strong>的重量，長期拉扯下便會發炎硬化，形成硬梆梆的「氣結」。
+                        </p>
+                    </div>
+
+                    <!-- 下背卡片 -->
+                    <div class="bg-indigo-50/80 border-l-4 border-indigo-500 p-4 rounded-r-2xl shadow-sm print-p-small">
+                        <div class="flex items-center gap-3 mb-1.5 text-indigo-800">
+                            <i class="fa-solid fa-faucet text-2xl"></i>
+                            <h3 class="text-lg font-bold">下背血管像被踩扁的水管</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm md:text-base leading-relaxed font-medium print-text-large">
+                            坐姿會讓腰椎承受比站姿多出 <strong>$1.5$ 倍</strong>的壓力。習慣翹腳或癱坐時，局部的肌肉會被過度擠壓，血管就像被踩扁的水管，血液送不進去、代謝廢物排不出來，酸痛與發麻感自然黏上身。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 核心生活處方 -->
+            <section class="space-y-3">
+                <div class="flex items-center gap-3">
+                    <div class="bg-brand-accent text-white w-9 h-9 rounded-full flex items-center justify-center text-lg shadow-md">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h2 class="text-xl md:text-2xl font-bold text-gray-800">核心生活處方：三個辦公舒壓法，我們一起來實驗！</h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-4 print-gap-small">
+                    <!-- 三個直角 -->
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between hover:-translate-y-0.5 transition duration-300 print-p-small">
+                        <div>
+                            <div class="bg-indigo-50 text-indigo-600 w-11 h-11 mx-auto rounded-full flex items-center justify-center text-xl mb-2">
+                                <i class="fa-solid fa-chair"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 text-center mb-1">🖥️ 三個「健康直角」</h3>
+                            <p class="text-gray-700 text-sm md:text-base leading-relaxed font-medium print-text-large">
+                                <strong>調整椅子高度：</strong>使「手肘關節」、「髖關節」及「膝關節」呈現舒服的 <strong>$90 \sim 105^\circ$ 直角</strong>，雙腳平踩。螢幕平視不低頭，幫起重機卸下沙包。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 伸展儀式 -->
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between hover:-translate-y-0.5 transition duration-300 print-p-small">
+                        <div>
+                            <div class="bg-amber-50 text-amber-600 w-11 h-11 mx-auto rounded-full flex items-center justify-center text-xl mb-2">
+                                <i class="fa-solid fa-child-reaching"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 text-center mb-1">🧘 「50分鐘伸展」</h3>
+                            <p class="text-gray-700 text-sm md:text-base leading-relaxed font-medium print-text-large">
+                                <strong>定時重置橡皮筋：</strong>每工作 <strong>$50$ 分鐘</strong>，就站立把雙手往天空推，或在背後雙手反扣向後拉胸口，維持 <strong>$15$ 秒</strong>。將變形拉長的肌肉彈回原本彈性。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 補水走動 -->
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between hover:-translate-y-0.5 transition duration-300 print-p-small">
+                        <div>
+                            <div class="bg-blue-50 text-blue-600 w-11 h-11 mx-auto rounded-full flex items-center justify-center text-xl mb-2">
+                                <i class="fa-solid fa-glass-water"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 text-center mb-1">💧 補水與微量走動</h3>
+                            <p class="text-gray-700 text-sm md:text-base leading-relaxed font-medium print-text-large">
+                                <strong>加滿關節潤滑油：</strong>充足的水分能滋潤椎間盤與關節軟骨。定時起身去裝水，就是最天然的血管通渠運動，能順暢帶走累積在肌肉裡的酸痛乳酸。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 建議就醫與諮詢管道 -->
+            <section class="grid md:grid-cols-2 gap-4 pt-1 print-gap-small">
+                <!-- 建議就醫科別 -->
+                <div class="bg-gray-50 p-4 rounded-2xl border border-gray-200 flex flex-col justify-center print-p-small">
+                    <h3 class="text-base md:text-lg font-bold text-gray-800 mb-1.5 flex items-center gap-2">
+                        <i class="fa-solid fa-stethoscope text-brand"></i> 建議就醫 / 追蹤科別
+                    </h3>
+                    <p class="text-gray-600 text-xs md:text-sm mb-2 leading-tight">
+                        單純酸痛在充足睡眠和熱水澡後能緩解。若持續超過兩週未改善，或出現手腳發麻、無力：
+                    </p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="bg-brand text-white px-3 py-1 rounded-full text-sm font-semibold shadow-sm">復健科</span>
+                        <span class="bg-brand text-white px-3 py-1 rounded-full text-sm font-semibold shadow-sm">骨科</span>
+                    </div>
+                </div>
+
+                <!-- 安心諮詢管道 -->
+                <div class="bg-brand text-white p-4 rounded-2xl shadow-lg relative overflow-hidden print-p-small">
+                    <div class="absolute -right-4 -bottom-4 opacity-10">
+                        <i class="fa-solid fa-comments text-7xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-1 flex items-center gap-2 relative z-10 text-base md:text-lg">
+                        <i class="fa-solid fa-heart-circle-check"></i> 有輕盈的身體，才能享受精彩生活
+                    </h3>
+                    <p class="text-brand-light text-sm md:text-base leading-relaxed relative z-10 font-medium print-text-large">
+                        我是您的臨場服務健康管理師，隨時都在您身邊。工作累了、背拉不開時，隨時歡迎您來休息放鬆，我們一起找回輕盈活力！
+                    </p>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- 頁尾/免責聲明 -->
+        <footer class="bg-gray-100 py-3 px-6 text-center border-t border-gray-200 flex flex-col items-center">
+            <!-- 頁尾 LOGO -->
+            <img src="安澤健康顧問%20Anzecare%20Health.png" alt="安澤健康顧問 Anzecare Health" class="h-8 md:h-9 mb-2 object-contain opacity-75">
+            
+            <p class="text-xs md:text-sm text-gray-600 flex items-center justify-center gap-2 font-medium">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                免責聲明：本單張僅供健康衛教參考，具體診斷、用藥與治療請遵照醫囑。
+            </p>
+            <p class="text-xs text-gray-400 mt-1">&copy; 安澤健康顧問 Anzecare Health Consulting</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
